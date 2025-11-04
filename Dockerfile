@@ -8,7 +8,7 @@ WORKDIR /app
 COPY demo /app
 
 # Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r demo/requirements.txt
 
 # Command to run your Python script
 CMD ["python", "demo/first-deom.py"]
