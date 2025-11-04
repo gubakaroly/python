@@ -5,10 +5,10 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy the project files
-COPY demo /app
+COPY . /app
 
 # Install dependencies
-RUN pip install --no-cache-dir -r demo/requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Command to run your Python script
 CMD ["python", "demo/first-deom.py"]
